@@ -54,7 +54,7 @@ body::-webkit-scrollbar-thumb {
 }
 .bodyIndex {
   background-image: url("../imagenes/svg-mati-bg.svg"); /*background fondo SCL*/
-  background-color: black;
+  background-color: #0f0f0f;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -81,18 +81,38 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
 }
 .contenidoPresentacion .nombre {
-  font-size: 2.5vw;
+  font-size: 3.5vw;
   margin: 0;
   padding: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-180%);
+  text-align: center;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 14ch;
+  animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+  overflow: hidden;
 }
+
+@keyframes typing {
+  from { width: 0;}
+}
+
+@keyframes blink {
+  50% { border-color: transparent;}
+}
+
 @media (max-width: 1065px) {
   .contenidoPresentacion .nombre {
     font-size: 3.3vw;
     margin: 1px;
   }
 }
+
 .contenidoPresentacion .descripcion {
-  font-size: 1.2vw;
+  font-size: 2vw;
   font-weight: normal;
   margin: 0;
   padding: 0;
@@ -106,13 +126,16 @@ body::-webkit-scrollbar-thumb {
 .contenidoPresentacion .botonIngresar {
   color: #E2A93B;
   text-decoration: none;
-  font-size: 1.5vw;
+  font-size: 2.5vw;
   margin: 5px;
   padding: 0;
-}
-.contenidoPresentacion .botonIngresar:hover {
   text-decoration: underline;
 }
+
+/*.contenidoPresentacion .botonIngresar:hover {
+  text-decoration: underline;
+}*/
+
 @media (max-width: 1065px) {
   .contenidoPresentacion .botonIngresar {
     font-size: 2.8vw;
