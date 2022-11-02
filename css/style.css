@@ -53,7 +53,7 @@ body::-webkit-scrollbar-thumb {
   src: url(../fonts/BebasNeue-Regular.woff) format("woff");
 }
 .bodyIndex {
-  background-image: url("../imagenes/fotofondo.jpg"); /*background fondo SCL*/
+  background-image: url("../imagenes/svg-mati-bg.svg"); /*background fondo SCL*/
   background-color: black;
   background-position: center center;
   background-repeat: no-repeat;
@@ -62,12 +62,12 @@ body::-webkit-scrollbar-thumb {
 }
 @media (max-width: 320px) {
   .bodyIndex {
-    background-image: url("../imagenes/320X480.png");
+    background-image: url("../imagenes/svg-mati-bg.svg");
   }
 }
 @media (max-width: 720px) {
   .bodyIndex {
-    background-image: url("../imagenes/768X1024.png");
+    background-image: url("../imagenes/svg-mati-bg.svg");
   }
 }
 
