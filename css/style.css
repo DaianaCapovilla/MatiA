@@ -261,7 +261,7 @@ body::-webkit-scrollbar-thumb {
 
 .parrafoDescripcion {
   color: #ffffff;
-  padding: 0;
+  padding: 0 0 16px 0;
   font-family: "Poppins", sans-serif;
 }
 .parrafoDescripcion p {
